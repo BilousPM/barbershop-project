@@ -1,0 +1,19 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primari-background-color);
+  color: var(--primary-text-color);
+  font-family: "open sans", sans-serif;
+}
+
+.link {
+  color: inherit;
+  transition: color var(--transition-interactive-elements);
+}
+
+.outline {
+  outline: 2px solid #ff6c00;
+  outline-offset: -2px;
+}

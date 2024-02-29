@@ -1,24 +1,24 @@
-:root {
+/* :root {
   --primary-text-color: #303030;
   --text-on-light: #555555;
   --text-on-dark: #9da4bd;
   --white-text-color: #ffffff;
-  --accent-color: #ff6c00;
+  --accent-color: #ff6c00; */
 
-  /* background-color */
-  --primari-background-color: #ffffff;
+/* background-color */
+/* --primari-background-color: #ffffff; */
 
-  /* other */
-  --btn-radius: 25px;
+/* other */
+/* --btn-radius: 25px;
   --heder-idx: 10;
   --modal-idx: 100;
   --transition-interactive-elements: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* BASE STYLES */
 
-html {
+/* html {
   scroll-behavior: smooth;
 }
 
@@ -26,10 +26,10 @@ body {
   background-color: var(--primari-background-color);
   color: var(--primary-text-color);
   font-family: "open sans", sans-serif;
-}
+} */
 
 /* ===== reset ===== */
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -44,26 +44,22 @@ p {
   list-style: none;
   padding: 0;
   margin: 0;
-}
+} */
 
-.link {
+/* .link {
   text-decoration: none;
+
   color: inherit;
-
   transition: color var(--transition-interactive-elements);
+} */
 
-  /* transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: linear; */
-}
-
-img {
+/* img {
   display: block;
   height: auto;
   max-width: 100%;
-}
+} */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -74,25 +70,22 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
+} */
 /* ===== components ===== */
 
-.section {
+/* .section {
   padding: 120px 0;
-}
+} */
 
-.container {
+/* .container {
   width: 1200px;
 
   padding: 0 15px;
   margin: 0 auto;
-
-  /* outline: 2px solid #ff6c00;
-  outline-offset: -2px; */
-}
+} */
 
 /* ===== button ===== */
-.button {
+/* .button {
   display: inline-block;
   min-width: 160px;
   min-height: 40px;
@@ -102,7 +95,6 @@ img {
   font-style: normal;
   font-weight: 600;
   line-height: 1.2;
-  /* line-height: normal; */
   letter-spacing: 1.08px;
   text-transform: uppercase;
 
@@ -113,13 +105,9 @@ img {
   cursor: pointer;
 
   transition: background-color var(--transition-interactive-elements);
+} */
 
-  /* transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: linear; */
-}
-
-.button.primary {
+/* .button.primary {
   color: var(--white-text-color);
 }
 
@@ -135,16 +123,16 @@ img {
 .button.secondary:hover,
 .button.secondary:focus {
   background-color: var(--accent-color);
-}
+} */
 
 /* ===== title style ===== */
-.section-title {
+/* .section-title {
   margin-bottom: 20px;
 
   font-family: Raleway, sans-serif;
   font-size: 42px;
   line-height: calc(49 / 42);
-  /* line-height: normal; */
+
   letter-spacing: 2.1px;
 }
 
@@ -156,7 +144,6 @@ img {
 
   font-size: 11px;
   font-weight: 600;
-  /* line-height: 1.2; */
   line-height: normal;
   text-transform: uppercase;
 }
@@ -169,18 +156,10 @@ img {
   width: 60px;
   height: 1px;
   background-color: var(--primary-text-color);
-}
-/* .upertitle::before {
-  display: inline-block;
-  content: "";
-
-  width: 60px;
-  height: 1px;
-  background-color: var(--primary-text-color);
 } */
 
 /*---------- heder ----------*/
-.header {
+/* .header {
   position: fixed;
   top: 0;
   left: 0;
@@ -285,12 +264,12 @@ img {
 .tel:hover,
 .tel:focus {
   color: var(--accent-color);
-}
+} */
 
 /* ================ 
 hero
 ===================*/
-.hero-container {
+/* .hero-container {
   display: flex;
 }
 
@@ -435,10 +414,10 @@ hero
 .slider-button[disabled] {
   color: rgba(157, 164, 189, 0.6);
   border-color: rgba(157, 164, 189, 0.6);
-}
+} */
 
 /* ---------- best barbershop ---------*/
-.about-container {
+/* .about-container {
   display: flex;
 }
 
@@ -448,9 +427,6 @@ hero
   margin-right: 30px;
 }
 
-/* .about-item:not(:last-child) {
-  margin-right: 30px;
-} */
 
 .about-right-wrap {
   width: 470px;
@@ -472,10 +448,10 @@ hero
   font-size: 14px;
   line-height: calc(26 / 14);
   letter-spacing: 0.28px;
-}
+} */
 
 /* ---------services and prices ---------- */
-
+/* 
 .servis {
   max-width: 1600px;
   margin: 0 auto;
@@ -524,7 +500,7 @@ hero
 
   color: var(--text-on-dark);
   font-size: 18px;
-  line-height: calc(30 / 18); /* 166.667% */
+  line-height: calc(30 / 18);
   letter-spacing: 0.36px;
 }
 
@@ -548,10 +524,10 @@ hero
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 /* -------- preferense ---------- */
-.preferense-container {
+/* .preferense-container {
   display: flex;
   gap: 30px;
 }
@@ -628,12 +604,12 @@ hero
 .preferense-phrases {
   color: var(--text-on-light);
   font-size: 18px;
-  line-height: calc(30 / 18); /* 166.667% */
+  line-height: calc(30 / 18); 
   letter-spacing: 0.36px;
-}
+} */
 
 /* team */
-.team {
+/* .team {
   background-color: #f7f7f7;
 }
 
@@ -704,20 +680,20 @@ hero
   color: var(--accent-color);
   line-height: 1.2;
   letter-spacing: 0.28px;
-}
+} */
 
 /*=== portfolio ===*/
-.portfolio-list {
+/* .portfolio-list {
   display: flex;
   gap: 30px;
 }
 
 .portfolio-upertitle {
   margin-bottom: 44px;
-}
+} */
 
 /*=== online booking ===*/
-.booking {
+/* .booking {
   width: 570px;
 }
 
@@ -815,10 +791,10 @@ hero
   height: 76px;
 
   resize: none;
-}
+} */
 
 /* ===== Contacts =====*/
-.container-group {
+/* .container-group {
   margin: 0 auto;
   max-width: 1600px;
   background-color: #191c26;
@@ -896,17 +872,17 @@ hero
 
 .contact-phrases::before {
   background-color: rgba(157, 164, 189, 0.4);
-}
+} */
 
-.contact-descriptions {
+/* .contact-descriptions {
   color: var(--text-on-dark);
   font-size: 18px;
-  line-height: calc(30 / 18); /* 166.667% */
+  line-height: calc(30 / 18);
   letter-spacing: 0.36px;
-}
+} */
 
 /*===== Footer ===== */
-.footer {
+/* .footer {
   display: flex;
   align-items: baseline;
 }
@@ -918,10 +894,10 @@ hero
   line-height: 1.2;
   letter-spacing: 2.2px;
   margin-right: auto;
-}
+} */
 
 /*===== Modal =====*/
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -946,8 +922,8 @@ hero
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.6);
-}
-
+} */
+/* 
 .modal {
   position: absolute;
   top: 50%;
@@ -1118,10 +1094,10 @@ hero
 .modal .button {
   display: block;
   margin: 0 auto;
-}
+} */
 
 /*===== Animation =====*/
-@keyframes scaleLogo {
+/* @keyframes scaleLogo {
   0% {
     transform: scale(1);
   }
@@ -1147,4 +1123,4 @@ hero
   100% {
     transform: rotateZ(180deg);
   }
-}
+} */

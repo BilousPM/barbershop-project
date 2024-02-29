@@ -1,0 +1,17 @@
+:root {
+  --primary-text-color: #303030;
+  --text-on-light: #555555;
+  --text-on-dark: #9da4bd;
+  --white-text-color: #ffffff;
+  --accent-color: #ff6c00;
+
+  /* background-color */
+  --primari-background-color: #ffffff;
+
+  /* other */
+  --btn-radius: 25px;
+  --heder-idx: 10;
+  --modal-idx: 100;
+  --transition-interactive-elements: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
