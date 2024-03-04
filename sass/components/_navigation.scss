@@ -1,0 +1,48 @@
+.nav {
+  margin-right: auto;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav__link {
+  position: relative;
+  color: var(--white-text-color);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 1.2px;
+  display: block;
+  padding: 49px 0;
+
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.nav__link::after {
+  content: "";
+  width: 97%;
+  height: 4px;
+  border-radius: 2px;
+
+  background-color: var(--accent-color);
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.2);
+  opacity: 0;
+
+  @include transition(transform, opasity);
+}
+
+.nav__link:hover::after {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+}

@@ -13,79 +13,20 @@
   backdrop-filter: blur(3px);
 }
 
-.header > .container {
+.header__container {
   display: flex;
   align-items: center;
-}
-
-.logo {
-  margin-right: 131px;
-  animation: scaleLogo 4000ms linear infinite;
-}
-
-.logo-svg {
-  fill: var(--primary-text-color);
 }
 
 .header.no-transparency .logo-svg {
   fill: #ffffff;
 }
 
-.header-nav {
-  margin-right: auto;
-}
-
-.header-list {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.header-list .link {
-  display: block;
-  padding: 49px 0;
-}
-
-.header-contact-wrap {
+.header__contact-wrap {
   display: flex;
   align-items: center;
   gap: 43px;
   padding-right: 20px;
-}
-
-.header .link {
-  position: relative;
-  color: var(--white-text-color);
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: 1.2px;
-}
-
-.header .link:hover,
-.header .link:focus {
-  color: var(--accent-color);
-}
-
-.header .link::after {
-  content: "";
-  width: 97%;
-  height: 4px;
-  border-radius: 2px;
-
-  background-color: var(--accent-color);
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%) scale(0.2);
-  opacity: 0;
-
-  transition: transform 250ms, opasity 250ms;
-}
-
-.header .link:hover::after {
-  transform: translateX(-50%) scale(1);
-  opacity: 1;
 }
 
 .tel {
@@ -98,9 +39,9 @@
   text-transform: uppercase;
 
   transition: color var(--transition-interactive-elements);
-}
 
-.tel:hover,
-.tel:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

@@ -9,6 +9,11 @@
   width: 98px;
 }
 
+.hero .social-list {
+  transform: rotateZ(-90deg) translateY(40px) translateX(-35px);
+  transform-origin: left;
+}
+
 .hero-right-side {
   position: relative;
 
@@ -22,40 +27,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.social-list {
-  align-items: center;
-  display: flex;
-  gap: 40px;
-}
-
-.hero .social-list {
-  position: absolute;
-  left: -78px;
-  bottom: 182px;
-  transform: rotateZ(-90deg);
-  transform-origin: bottom;
-}
-
-.social-link {
-  display: inline-flex;
-  padding-top: 56px;
-  padding-bottom: 56px;
-
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: 2.2px;
-}
-
-.hero .social-link {
-  padding: 0;
-}
-
-.social-link:hover,
-.social-link:focus {
-  color: var(--accent-color);
 }
 
 .phrases-opaciti {

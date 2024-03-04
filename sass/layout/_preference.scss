@@ -1,3 +1,7 @@
+.preferense {
+  @extend %section;
+}
+
 .preferense-container {
   display: flex;
   gap: 30px;

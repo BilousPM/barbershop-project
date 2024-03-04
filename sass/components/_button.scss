@@ -8,7 +8,6 @@
   font-style: normal;
   font-weight: 600;
   line-height: 1.2;
-  /* line-height: normal; */
   letter-spacing: 1.08px;
   text-transform: uppercase;
 
@@ -17,28 +16,22 @@
   border-radius: 25px;
   padding: 11px 19px;
   cursor: pointer;
+  @include transition(background-color, color);
 
-  transition: background-color var(--transition-interactive-elements);
+  // transition: background-color var(--transition-interactive-elements),
+  //   color var(--transition-interactive-elements);
 
-  /* transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: linear; */
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: #fff;
+  }
 }
 
 .button.primary {
   color: var(--white-text-color);
 }
 
-.button.secondary {
+.btn--secondary {
   color: var(--primary-text-color);
-}
-
-.button.primary:hover,
-.button.primary:focus {
-  background-color: var(--accent-color);
-}
-
-.button.secondary:hover,
-.button.secondary:focus {
-  background-color: var(--accent-color);
 }

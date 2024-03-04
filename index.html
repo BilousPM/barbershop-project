@@ -52,21 +52,23 @@
   <body>
     <!--========== heder ==========-->
     <header class="header" data-header>
-      <div class="container">
+      <div class="header__container container">
         <a href="index.html" class="logo">
           <svg class="logo-svg" width="69" height="55">
             <use href="./images/icons.svg#icon-logo"></use>
           </svg>
         </a>
-        <nav class="header-nav">
-          <ul class="header-list list">
-            <li><a href="#about" class="link">About</a></li>
-            <li><a href="#servises" class="link">Services and prices</a></li>
-            <li><a href="#barbers" class="link">Barbers</a></li>
-            <li><a href="#contacts" class="link">Contacts</a></li>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#about" class="nav__link">About</a></li>
+            <li>
+              <a href="#servises" class="nav__link">Services and prices</a>
+            </li>
+            <li><a href="#barbers" class="nav__link">Barbers</a></li>
+            <li><a href="#contacts" class="nav__link">Contacts</a></li>
           </ul>
         </nav>
-        <div class="header-contact-wrap">
+        <div class="header__contact-wrap">
           <a href="tel:+380441111111" class="tel">+38 044 111 11 11</a>
           <button type="button" class="button primary" data-modal-open>
             Online-booking
@@ -82,7 +84,7 @@
       <section class="hero">
         <div class="hero-container container">
           <div class="hero-left-side">
-            <ul class="list social-list">
+            <ul class="social-list">
               <li>
                 <a
                   href="https://www.instagram.com/"
@@ -112,12 +114,12 @@
               We are experts in trendy men’s haircuts. We work quickly,
               carefully and with style.
             </p>
-            <ul class="slider-pagination list">
+            <ul class="slider-pagination">
               <li class="slider-pagination-item activ"></li>
               <li class="slider-pagination-item"></li>
               <li class="slider-pagination-item"></li>
             </ul>
-            <ul class="slider-list list">
+            <ul class="slider-list">
               <li class="slider-item">
                 <button class="slider-button prev" disabled type="button">
                   Back
@@ -136,7 +138,7 @@
       <!---------- Best barbershop (About) ---------->
       <section class="section about" id="about">
         <div class="about-container container">
-          <ul class="about-list list">
+          <ul class="about-list">
             <li class="about-item">
               <img
                 src="./images/about/img1.jpg"
@@ -169,7 +171,7 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="button secondary" data-modal-open>
+            <button type="button" class="button btn--secondary" data-modal-open>
               ONLINE-BOOKING
             </button>
           </div>
@@ -177,14 +179,14 @@
       </section>
 
       <!-------- services and prices --------->
-      <section class="section servis" id="servises">
+      <section class="servis" id="servises">
         <div class="container">
           <p class="upertitle phrases-opaciti">
             Spend your time with the best masters
           </p>
           <h2 class="section-title servis-title">Services and prices</h2>
           <div class="prises-wrap">
-            <ul class="prises-list list">
+            <ul class="prises-list">
               <li class="prises-item">
                 <span class="prises-item-servis">Men’s haircut</span>from 300
                 uah.
@@ -201,7 +203,7 @@
                 200 uah.
               </li>
             </ul>
-            <ul class="prises-list list">
+            <ul class="prises-list">
               <li class="prises-item">
                 <span class="prises-item-servis">Trainee’s haircut</span>from 50
                 uah.
@@ -228,10 +230,10 @@
       </section>
 
       <!--------- preference ------------>
-      <section class="preferense section">
+      <section class="preferense">
         <div class="container preferense-container">
           <div class="preferense-left-wrap">
-            <ul class="preferens-list list">
+            <ul class="preferens-list">
               <li class="preferens-item">
                 <span class="preferense-span">600</span>
                 <p class="preferense-description">
@@ -268,11 +270,11 @@
       </section>
 
       <!----------- team -------------->
-      <section class="section team" id="barbers">
+      <section class="team" id="barbers">
         <div class="container">
           <p class="upertitle">For true enjoyers of the atmosphere</p>
           <h2 class="section-title team-title">Our barbers</h2>
-          <ul class="list team-list">
+          <ul class="team-list">
             <li class="team-item">
               <img
                 src="./images/our_barbers/img1.jpeg"
@@ -283,7 +285,7 @@
               <div class="team-wrapper">
                 <h3 class="team-name">John Smith</h3>
                 <p class="team-description">Extreme Barber</p>
-                <ul class="list icon-list">
+                <ul class="icon-list">
                   <li>
                     <a
                       class="icon-link"
@@ -345,7 +347,7 @@
               <div class="team-wrapper">
                 <h3 class="team-name">Michele Doe</h3>
                 <p class="team-description">Extreme Barber</p>
-                <ul class="list icon-list">
+                <ul class="icon-list">
                   <li>
                     <a
                       class="icon-link"
@@ -407,7 +409,7 @@
               <div class="team-wrapper">
                 <h3 class="team-name">Alan Black</h3>
                 <p class="team-description">Extreme Barber</p>
-                <ul class="list icon-list">
+                <ul class="icon-list">
                   <li>
                     <a
                       class="icon-link"
@@ -464,14 +466,13 @@
       </section>
 
       <!------------- portfolio --------------->
-      <section class="section">
+      <section class="portfolio">
         <div class="container">
-          <!-- hidden title -->
           <h2 class="visually-hidden">some photos of our works</h2>
           <p class="upertitle portfolio-upertitle">
             In Latin, "barba" means "beard"
           </p>
-          <ul class="list portfolio-list">
+          <ul class="portfolio-list">
             <li>
               <img
                 src="./images/photo_of_our_works/Rectangle_25.jpeg"
@@ -577,7 +578,7 @@
     <!--------------- footer ------------->
     <footer class="footer container">
       <p class="copiright">&copy; Copyright 2024</p>
-      <ul class="list social-list">
+      <ul class="social-list">
         <li>
           <a
             href=""
@@ -676,7 +677,7 @@
               <a class="modal-form-agreement__link" href="">Contract</a>
             </label>
           </div>
-          <button type="submit" class="button secondary">send</button>
+          <button type="submit" class="button btn--secondary">send</button>
         </form>
       </div>
     </div>

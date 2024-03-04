@@ -2,21 +2,25 @@
 @import "./utils/variables";
 @import "./utils/visually-hidden";
 @import "./utils/animations";
-
+@import "./utils/placeholders";
+@import "./utils/mixins";
 //basic styles
 @import "./base/reset";
 @import "./base/base";
 
 // components styles
-@import "./components/typography";
-@import "./components/section";
+// @import "./components/section";
+
 @import "./components/container";
+@import "./components/typography";
 @import "./components/button";
 // logo not used
-@import "./components/logotype";
+@import "./components/_logotype";
+@import "./components/navigation";
+@import "./components/copiright";
+@import "./components/social-link";
 @import "./components/backdrop";
 @import "./components/modal-window";
-
 //layout styles
 @import "./layout/header";
 @import "./layout/hero";

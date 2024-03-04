@@ -1,4 +1,10 @@
-.about-container {
+.about {
+  // @extend %section;
+
+  @include section;
+}
+
+.about .about-container {
   display: flex;
 }
 
