@@ -1,11 +1,17 @@
 .nav {
+  display: none;
   margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
 .nav__list {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
+  // gap: 30px;
 }
 
 .nav__link {
@@ -14,9 +20,9 @@
   font-size: 12px;
   font-weight: 600;
   line-height: 1.2;
-  letter-spacing: 1.2px;
+  letter-spacing: 0, 1em;
   display: block;
-  padding: 49px 0;
+  padding: 52px 0;
 
   @include transition(color);
 

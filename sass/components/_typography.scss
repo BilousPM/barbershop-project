@@ -1,11 +1,12 @@
 .section-title {
+  font-size: 28px;
   margin-bottom: 20px;
-
   font-family: Raleway, sans-serif;
-  font-size: 42px;
+  // font-size: 42px;
   line-height: calc(49 / 42);
-  /* line-height: normal; */
-  letter-spacing: 2.1px;
+  // line-height: normal;
+  // letter-spacing: 2.1px;
+  letter-spacing: 0.05em;
 }
 
 .upertitle {
@@ -16,6 +17,7 @@
 
   font-size: 11px;
   font-weight: 600;
+  letter-spacing: 0.1em;
   /* line-height: 1.2; */
   line-height: normal;
   text-transform: uppercase;
