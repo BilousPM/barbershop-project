@@ -27,18 +27,20 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 272px;
-    padding-bottom: 137px;
+    padding-bottom: 237px;
     padding-left: 78px;
   }
 
-  // padding-bottom: 208px;
-  // padding-left: 100px;
+  @media screen and (min-width: $desktop) {
+    background-image: url(../images/slider-bg-hero/bg-image-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 208px;
+    padding-left: 100px;
+  }
 
   background-color: rgba(25, 28, 38, 0.2);
-  // background-image: url(../images/slider-bg-hero/bg-image-1.png);
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center;
 }
 
 .phrases-opaciti {

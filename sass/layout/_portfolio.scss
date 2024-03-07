@@ -1,5 +1,15 @@
 .portfolio {
   // @extend %section;
+
+  @include section(84px, 84px);
+
+  @media screen and (min-width: $tablet) {
+    @include section(100px, 100px);
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include section;
+  }
 }
 
 .portfolio-list {

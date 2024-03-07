@@ -1,18 +1,44 @@
 .team {
-  // @extend %section;
-
   background-color: #f7f7f7;
+  @include section(84px, 84px);
+
+  @media screen and (min-width: $tablet) {
+    @include section(100px, 100px);
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include section;
+  }
+  // @extend %section;
 }
 
 .team-list {
-  display: flex;
-  gap: 30px;
+  gap: 64px;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+
+    gap: 30px;
+  }
 }
 
 .team-item {
   text-align: center;
 }
+
+.team-item > img {
+  @media screen and (max-width: 767) {
+    margin: 0 auto;
+  }
+}
+
+.team-item:not(:last-child) {
+  margin-bottom: 64px;
+}
 .team-title {
+  font-size: 42;
+  letter-spacing: 0.05em;
+  font-weight: 700;
   margin-bottom: 44px;
 }
 
