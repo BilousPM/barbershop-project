@@ -1,16 +1,9 @@
 .team {
   background-color: #f7f7f7;
-  @include section(84px, 84px);
-
-  @media screen and (min-width: $tablet) {
-    @include section(100px, 100px);
-  }
-
-  @media screen and (min-width: $desktop) {
-    @include section;
-  }
-  // @extend %section;
 }
+
+// @include section;
+//   // @extend %section;
 
 .team-list {
   gap: 64px;

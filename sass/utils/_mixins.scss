@@ -1,7 +1,7 @@
-@mixin section($pt: 120px, $pb: 120px) {
-  padding-top: $pt;
-  padding-bottom: $pb;
-}
+// @mixin section($pt: 120px, $pb: 120px) {
+//   padding-top: $pt;
+//   padding-bottom: $pb;
+// }
 
 @mixin transition($property...) {
   transition-property: $property;

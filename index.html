@@ -180,7 +180,7 @@
       </section>
 
       <!------ services and prices --------->
-      <section class="servis" id="servises">
+      <section class="servis section" id="servises">
         <div class="container">
           <p class="upertitle phrases-opaciti">
             Spend your time with the best masters
@@ -231,7 +231,7 @@
       </section>
 
       <!------ preference ------------>
-      <section class="preferense">
+      <section class="preferense section">
         <div class="container preferense-container">
           <div class="preferense-left-wrap">
             <ul class="preferens-list">
@@ -273,7 +273,7 @@
       </section>
 
       <!------ team -------------->
-      <section class="team" id="barbers">
+      <section class="team section" id="barbers">
         <div class="container">
           <p class="upertitle">For true enjoyers of the atmosphere</p>
           <h2 class="section-title team-title">Our barbers</h2>
@@ -469,14 +469,14 @@
       </section>
 
       <!------ portfolio --------------->
-      <!-- <section class="portfolio">
+      <section class="portfolio section">
         <div class="container">
           <h2 class="visually-hidden">some photos of our works</h2>
           <p class="upertitle portfolio-upertitle">
             In Latin, "barba" means "beard"
           </p>
-          <ul class="portfolio-list">
-            <li>
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
               <img
                 src="./images/photo_of_our_works/Rectangle_25.jpeg"
                 alt=""
@@ -484,7 +484,7 @@
                 height="360"
               />
             </li>
-            <li>
+            <li class="portfolio__item">
               <img
                 src="./images/photo_of_our_works/Rectangle_26.jpeg"
                 alt=""
@@ -492,7 +492,7 @@
                 height="360"
               />
             </li>
-            <li>
+            <li class="portfolio__item">
               <img
                 src="./images/photo_of_our_works/Rectangle_27.jpeg"
                 alt=""
@@ -500,7 +500,7 @@
                 height="360"
               />
             </li>
-            <li>
+            <li class="portfolio__item">
               <img
                 src="./images/photo_of_our_works/Rectangle_28.jpeg"
                 alt=""
@@ -510,72 +510,84 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!------ online booking and contacts ------>
-      <!-- <div class="container-group" id="contacts">
+      <div class="container-group" id="contacts">
         <div class="container contacts-container">
           <section class="booking section">
             <h2 class="section-title booking-title">Online-booking</h2>
             <form class="booking-form" name="booking-form">
-              <div class="booking-group">
+              <div class="booking__groop">
                 <label class="booking-groop-fild">
                   <input
-                    type="text"
                     class="booking-fild"
+                    type="text"
+                    name="user_name"
                     placeholder="Jack Sparrow"
+                    required
                   />
                   <span class="booking-label">name</span>
                 </label>
+
                 <label class="booking-groop-fild">
                   <input
-                    type="tel"
                     class="booking-fild"
+                    type="tel"
+                    name="user_phone"
                     placeholder="+4(00) 444 44 44"
+                    required
                   />
                   <span class="booking-label">phone</span>
                 </label>
               </div>
-              <label class="booking-group">
+              <label class="booking__groop">
                 <textarea
                   class="booking-message"
-                  name="booking-message"
+                  name="user_message"
                   rows="5"
-                  placeholder="Enter your message..."
+                  placeholder="Enter your message .."
                 ></textarea>
-                <span class="booking-label">message</span></label
-              >
+                <span class="booking-label">message</span>
+              </label>
 
               <button type="submit" class="button primary">send</button>
             </form>
           </section>
+
           <section class="contacts section">
             <h2 class="section-title contact-title">Contacts</h2>
-            <address class="addres-wrap">
-              <a href="" class="adres link">
-                <svg class="adres-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-map-pin"></use>
-                </svg>
-                st. Vasilkivska, 7A<br />Kyiv, 08132
-              </a>
-              <a href="tel:+380441111111" class="phone link"
-                ><svg class="adres-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-                +38 044 111 11 11</a
-              >
-              <a href="mailto:barbershop@email.com" class="mail link"
-                ><svg class="adres-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-mail"></use>
-                </svg>
-                barbershop@email.com</a
-              >
-            </address>
-            <p class="upertitle contact-phrases">Working hours</p>
-            <p class="contact-descriptions">Every day from 9:00 to 22:00</p>
+            <div class="contact__wrapper">
+              <address class="adres-wrap">
+                <a href="" class="adres link contact__link">
+                  <svg class="adres-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-map-pin"></use>
+                  </svg>
+                  st. Vasilkivska, 7A Kyiv, 08132
+                </a>
+                <a href="tel:+380441111111" class="phone link contact__link"
+                  ><svg class="adres-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                  +38 044 111 11 11
+                </a>
+                <a
+                  href="mailto:barbershop@email.com"
+                  class="mail link contact__link"
+                  ><svg class="adres-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-mail"></use>
+                  </svg>
+                  barbershop@email.com
+                </a>
+              </address>
+              <div class="contacts__wrapper-description">
+                <p class="upertitle contact-phrases">Working hours</p>
+                <p class="contact-descriptions">Every day from 9:00 to 22:00</p>
+              </div>
+            </div>
           </section>
         </div>
-      </div> -->
+      </div>
     </main>
 
     <!------ footer -------->

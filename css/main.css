@@ -133,6 +133,20 @@ body {
   outline-offset: -2px;
 }
 
+.section {
+  padding: 84px 0;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 100px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 120px 0;
+  }
+}
+
 .container {
   outline: 2px solid #7f07cf;
   outline-offset: -2px;
@@ -826,23 +840,6 @@ body {
   border-color: rgba(157, 164, 189, 0.6);
 }
 
-.about {
-  padding-top: 84px;
-  padding-bottom: 84px;
-}
-@media screen and (min-width: 768px) {
-  .about {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .about {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .about .about-container {
     display: -webkit-box;
@@ -923,19 +920,9 @@ body {
 .servis {
   margin: 0 auto;
   background-color: #111319;
-  padding-top: 84px;
-  padding-bottom: 84px;
-}
-@media screen and (min-width: 768px) {
-  .servis {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .servis {
-    padding-top: 120px;
-    padding-bottom: 120px;
     max-width: 1600px;
     background-image: url(../images/servis-image/servis-bg.png);
     background-repeat: no-repeat;
@@ -1040,23 +1027,6 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.preferense {
-  padding-top: 84px;
-  padding-bottom: 84px;
-}
-@media screen and (min-width: 768px) {
-  .preferense {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .preferense {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
 }
 
 .preferense-container {
@@ -1197,20 +1167,6 @@ body {
 
 .team {
   background-color: #f7f7f7;
-  padding-top: 84px;
-  padding-bottom: 84px;
-}
-@media screen and (min-width: 768px) {
-  .team {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
 }
 
 .team-list {
@@ -1319,67 +1275,81 @@ body {
   letter-spacing: 0.28px;
 }
 
-.portfolio {
-  padding-top: 84px;
-  padding-bottom: 84px;
-}
 @media screen and (min-width: 768px) {
-  .portfolio {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  .portfolio__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
   }
-}
-@media screen and (min-width: 1200px) {
-  .portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-}
-
-.portfolio-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
 }
 
 .portfolio-upertitle {
   margin-bottom: 44px;
 }
 
-.booking {
-  width: 570px;
+@media screen and (max-width: 1199px) {
+  .portfolio__item {
+    -ms-flex-preferred-size: 330px;
+        flex-basis: 330px;
+  }
 }
 
-.booking.section {
-  padding-top: 130px;
-  padding-bottom: 111px;
+.portfolio__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.container-group {
+  margin: 0 auto;
+  max-width: 1600px;
+  background-color: #191c26;
+}
+
+@media screen and (max-width: 767px) {
+  .booking {
+    text-align: center;
+  }
 }
 
 .booking-title {
+  font-size: 42px;
   color: var(--white-text-color);
   margin-bottom: 44px;
 }
 
-.booking-group {
+.booking__groop {
+  display: block;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 44px;
+}
+@media screen and (min-width: 768px) {
+  .booking__groop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .booking-groop-fild {
   position: relative;
-  -ms-flex-preferred-size: 270px;
-      flex-basis: 270px;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .booking-groop-fild {
+    -ms-flex-preferred-size: 330px;
+        flex-basis: 330px;
+  }
 }
 
 .booking-groop-fild:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 44px;
+}
+@media screen and (min-width: 768px) {
+  .booking-groop-fild:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .booking-fild,
@@ -1487,6 +1457,11 @@ body {
   transition: transform var(--transition-interactive-elements), color var(--transition-interactive-elements), -webkit-transform var(--transition-interactive-elements);
 }
 
+.booking-fild + .booking-label::after {
+  content: "*";
+  color: #ff6c00;
+}
+
 .booking-fild:not(:-moz-placeholder-shown) + .booking-label, .booking-message:not(:-moz-placeholder-shown) + .booking-label {
   transform: translateY(-100%) scale(0.8);
   color: #ffffff;
@@ -1506,56 +1481,46 @@ body {
   color: #ffffff;
 }
 
-.booking-groop-fild .booking-label::after {
-  content: "*";
-  color: #ff6c00;
-}
-
 .booking-message {
   height: 76px;
   resize: none;
 }
 
 /* ===== Contacts =====*/
-.container-group {
-  margin: 0 auto;
-  max-width: 1600px;
-  background-color: #191c26;
-  background-image: url(../images/contact-bg-img/Contact-bg-img.png);
-  background-repeat: no-repeat;
-  background-position: left calc(50% + 408px) top 50%;
-}
-
-.contacts-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.contacts {
-  padding-left: 105px;
-  padding-top: 130px;
-  padding-bottom: 111px;
-  width: 570px;
-}
-
 .contact-title {
+  font-size: 42px;
   color: var(--white-text-color);
   margin-bottom: 40px;
 }
-
-.addres-wrap {
-  width: 270px;
+@media screen and (max-width: 767px) {
+  .contact-title {
+    text-align: center;
+  }
 }
 
-.contacts .link {
+.adres-wrap {
+  margin-bottom: 44px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    gap: 30px;
+  }
+}
+
+.contact__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 16;
+  gap: 16px;
+}
+
+.contacts .link {
   font-style: normal;
   color: var(--text-on-dark);
   font-size: 18px;
@@ -1564,6 +1529,9 @@ body {
 }
 
 .contacts .adres {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
   margin-bottom: 20px;
   font-weight: 700;
   -webkit-transition-property: -webkit-transform;
@@ -1595,7 +1563,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 70px;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;

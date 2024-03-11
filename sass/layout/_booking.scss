@@ -1,31 +1,61 @@
-.booking {
-  width: 570px;
+.container-group {
+  margin: 0 auto;
+  max-width: 1600px;
+  background-color: #191c26;
+  // background-image: url(../images/contact-bg-img/Contact-bg-img.png);
+  // background-repeat: no-repeat;
+  // background-position: left calc(50% + 408px) top 50%;
 }
 
-.booking.section {
-  padding-top: 130px;
-  padding-bottom: 111px;
+// .contacts-container {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+.booking {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  // width: 570px;
 }
 
 .booking-title {
+  font-size: 42px;
   color: var(--white-text-color);
   margin-bottom: 44px;
 }
 
-.booking-group {
+.booking__groop {
+  display: block;
   position: relative;
-  display: flex;
-  align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+
+  // align-items: center;
 
   margin-bottom: 44px;
 }
 
 .booking-groop-fild {
   position: relative;
-  flex-basis: 270px;
+  display: block;
+
+  @media screen and (min-width: $tablet) {
+    flex-basis: 330px;
+  }
+
+  // flex-basis: 270px;
 }
+
 .booking-groop-fild:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 44px;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 30px;
+  }
 }
 
 .booking-fild,
@@ -79,6 +109,11 @@
     color var(--transition-interactive-elements);
 }
 
+.booking-fild + .booking-label::after {
+  content: "*";
+  color: #ff6c00;
+}
+
 .booking-fild:focus + .booking-label,
 .booking-fild:not(:placeholder-shown) + .booking-label,
 .booking-message:focus + .booking-label,
@@ -87,51 +122,53 @@
   color: #ffffff;
 }
 
-.booking-groop-fild .booking-label::after {
-  content: "*";
-  color: #ff6c00;
-}
-
 .booking-message {
   height: 76px;
-
   resize: none;
 }
 
 /* ===== Contacts =====*/
-.container-group {
-  margin: 0 auto;
-  max-width: 1600px;
-  background-color: #191c26;
-  background-image: url(../images/contact-bg-img/Contact-bg-img.png);
-  background-repeat: no-repeat;
-  background-position: left calc(50% + 408px) top 50%;
-}
-
-.contacts-container {
-  display: flex;
-  justify-content: space-between;
-}
 
 .contacts {
-  padding-left: 105px;
-  padding-top: 130px;
-  padding-bottom: 111px;
-  width: 570px;
+  // padding-left: 105px;
+  // padding-top: 130px;
+  // padding-bottom: 111px;
+  // width: 570px;
 }
 
 .contact-title {
+  font-size: 42px;
+
   color: var(--white-text-color);
   margin-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
-.addres-wrap {
-  width: 270px;
+.adres-wrap {
+  margin-bottom: 44px;
+  // margin-bottom: 70px;
+  // width: 270px;
+}
+
+.contact__wrapper {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    flex-basis: 50%;
+    gap: 30px;
+  }
+}
+
+.contact__link {
+  display: flex;
+  gap: 16px;
 }
 
 .contacts .link {
-  display: flex;
-  gap: 16;
+  // display: flex;
+  // gap: 16;
   font-style: normal;
   color: var(--text-on-dark);
   font-size: 18px;
@@ -140,6 +177,9 @@
 }
 
 .contacts .adres {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
   margin-bottom: 20px;
   font-weight: 700;
 
@@ -159,7 +199,6 @@
 
 .contacts .mail {
   align-items: center;
-  margin-bottom: 70px;
 
   transition-property: transform;
   transition-duration: 1000ms;
