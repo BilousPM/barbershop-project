@@ -4,5 +4,9 @@
 }
 
 .logo-svg {
-  fill: var(--primary-text-color);
+  fill: #ffffff;
+
+  @media screen and (min-width: $tablet) {
+    fill: var(--primary-text-color);
+  }
 }

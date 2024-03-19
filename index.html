@@ -140,21 +140,90 @@
       <section class="section about" id="about">
         <div class="about-container container">
           <ul class="about-list">
-            <li class="about-item">
-              <img
-                src="./images/about/img1.jpg"
-                alt="shaves his beard"
-                width="270"
-                height="445"
-              />
+            <li class="about__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about-images/img1_l@1x.webp 1x,
+                    ./images/about-images/img1_l@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about-images/img1_l@1x.jpg 1x,
+                    ./images/about-images/img1_l@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/about-images/img1_m@1x.webp 1x,
+                    ./images/about-images/img1_m@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/about-images/img1_m@1x.jpg 1x,
+                    ./images/about-images/img1_m@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/about-images/img1_m@1x.jpg"
+                  alt="shaves his beard"
+                  loading="lazy"
+                />
+              </picture>
             </li>
-            <li class="about-item">
-              <img
-                src="./images/about/img2.jpg"
-                alt="shaves his neck"
-                width="270"
-                height="445"
-              />
+            <li class="about__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about-images/img2_l@1x.webp 1x,
+                    ./images/about-images/img2_l@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about-images/img2_l@1x.jpg 1x,
+                    ./images/about-images/img2_l@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/about-images/img2_m@1x.webp 1x,
+                    ./images/about-images/img2_m@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/about-images/img2_m@1x.jpg 1x,
+                    ./images/about-images/img2_m@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/about-images/img2_m@1x.jpg"
+                  alt="shaves his beard"
+                  loading="lazy"
+                />
+              </picture>
             </li>
           </ul>
 
@@ -280,9 +349,19 @@
           <ul class="team-list">
             <li class="team-item">
               <img
-                src="./images/our_barbers/img1.jpeg"
-                alt=""
-                width="370"
+                srcset="
+                  ./images/team-images/img1_team_370.jpg 370w,
+                  ./images/team-images/img1_team_418.jpg 418w,
+                  ./images/team-images/img1_team_450.jpg 450w,
+                  ./images/team-images/img1_team_740.jpg 740w,
+                  ./images/team-images/img1_team_836.jpg 836w,
+                  ./images/team-images/img1_team_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
+                src="./images/team-images/img1_team_450.jpg"
+                alt="John Smith"
+                loading="lazy"
+                width="450"
                 height="346"
               />
               <div class="team-wrapper">
@@ -342,9 +421,19 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/our_barbers/img2.jpeg"
-                alt=""
-                width="370"
+                srcset="
+                  ./images/team-images/img2_team_370.jpg 370w,
+                  ./images/team-images/img2_team_418.jpg 418w,
+                  ./images/team-images/img2_team_450.jpg 450w,
+                  ./images/team-images/img2_team_740.jpg 740w,
+                  ./images/team-images/img2_team_836.jpg 836w,
+                  ./images/team-images/img2_team_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
+                src="./images/team-images/img2_team_450.jpg"
+                alt="Michele Doe"
+                loading="lazy"
+                width="450"
                 height="346"
               />
               <div class="team-wrapper">
@@ -404,9 +493,19 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/our_barbers/img3.jpeg"
-                alt=""
-                width="370"
+                srcset="
+                  ./images/team-images/img3_team_370.jpg 370w,
+                  ./images/team-images/img3_team_418.jpg 418w,
+                  ./images/team-images/img3_team_450.jpg 450w,
+                  ./images/team-images/img3_team_740.jpg 740w,
+                  ./images/team-images/img3_team_836.jpg 836w,
+                  ./images/team-images/img3_team_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
+                src="./images/team-images/img3_team_450.jpg"
+                alt="Alan Black"
+                loading="lazy"
+                width="450"
                 height="346"
               />
               <div class="team-wrapper">
@@ -478,33 +577,73 @@
           <ul class="portfolio__list">
             <li class="portfolio__item">
               <img
-                src="./images/photo_of_our_works/Rectangle_25.jpeg"
-                alt=""
-                width="270"
+                srcset="
+                  ./images/portfolio-images/Rectangle25_pf_270.jpg 270w,
+                  ./images/portfolio-images/Rectangle25_pf_330.jpg 330w,
+                  ./images/portfolio-images/Rectangle25_pf_418.jpg 418w,
+                  ./images/portfolio-images/Rectangle25_pf_540.jpg 540w,
+                  ./images/portfolio-images/Rectangle25_pf_660.jpg 660w,
+                  ./images/portfolio-images/Rectangle25_pf_836.jpg 836w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw"
+                src="images/portfolio-images/Rectangle25_pf_418.jpg"
+                alt="photo gallery"
+                loading="lazy"
+                width="418"
                 height="360"
               />
             </li>
             <li class="portfolio__item">
               <img
-                src="./images/photo_of_our_works/Rectangle_26.jpeg"
-                alt=""
-                width="270"
+                srcset="
+                  ./images/portfolio-images/Rectangle26_pf_270.jpg 270w,
+                  ./images/portfolio-images/Rectangle26_pf_330.jpg 330w,
+                  ./images/portfolio-images/Rectangle26_pf_418.jpg 418w,
+                  ./images/portfolio-images/Rectangle26_pf_540.jpg 540w,
+                  ./images/portfolio-images/Rectangle26_pf_660.jpg 660w,
+                  ./images/portfolio-images/Rectangle26_pf_836.jpg 836w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw"
+                src="images/portfolio-images/Rectangle26_pf_418.jpg"
+                alt="photo gallery"
+                loading="lazy"
+                width="418"
                 height="360"
               />
             </li>
             <li class="portfolio__item">
               <img
-                src="./images/photo_of_our_works/Rectangle_27.jpeg"
-                alt=""
-                width="270"
+                srcset="
+                  ./images/portfolio-images/Rectangle27_pf_270.jpg 270w,
+                  ./images/portfolio-images/Rectangle27_pf_330.jpg 330w,
+                  ./images/portfolio-images/Rectangle27_pf_418.jpg 418w,
+                  ./images/portfolio-images/Rectangle27_pf_540.jpg 540w,
+                  ./images/portfolio-images/Rectangle27_pf_660.jpg 660w,
+                  ./images/portfolio-images/Rectangle27_pf_836.jpg 836w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw"
+                src="images/portfolio-images/Rectangle27_pf_418.jpg"
+                alt="photo gallery"
+                loading="lazy"
+                width="418"
                 height="360"
               />
             </li>
             <li class="portfolio__item">
               <img
-                src="./images/photo_of_our_works/Rectangle_28.jpeg"
-                alt=""
-                width="270"
+                srcset="
+                  ./images/portfolio-images/Rectangle28_pf_270.jpg 270w,
+                  ./images/portfolio-images/Rectangle28_pf_330.jpg 330w,
+                  ./images/portfolio-images/Rectangle28_pf_418.jpg 418w,
+                  ./images/portfolio-images/Rectangle28_pf_540.jpg 540w,
+                  ./images/portfolio-images/Rectangle28_pf_660.jpg 660w,
+                  ./images/portfolio-images/Rectangle28_pf_836.jpg 836w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw"
+                src="images/portfolio-images/Rectangle28_pf_418.jpg"
+                alt="photo gallery"
+                loading="lazy"
+                width="418"
                 height="360"
               />
             </li>
@@ -591,7 +730,7 @@
     </main>
 
     <!------ footer -------->
-    <!-- <footer class="footer container">
+    <footer class="footer container">
       <p class="copiright">&copy; Copyright 2024</p>
       <ul class="social-list">
         <li>
@@ -613,7 +752,7 @@
           >
         </li>
       </ul>
-    </footer> -->
+    </footer>
 
     <!------- modal -------->
     <!-- <div class="backdrop is-hidden" data-modal>
